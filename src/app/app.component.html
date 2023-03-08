@@ -1,5 +1,5 @@
 
-<div class="container">
+<!-- <div class="container">
   <app-cockpit></app-cockpit>
   <hr>
   <div class="row">
@@ -7,5 +7,16 @@
       <app-server-element *ngFor="let serverElement of serverElements"
       [element]="serverElement"></app-server-element>
     </div>
-  </div>
-</div>
+  </div> -->
+<!-- </div> -->
+<!-- 
+<app-auth></app-auth> -->
+
+<ul>
+  <li>
+    <a routerLink="./auth" routerLinkActive="active">Auth</a> |
+    <a routerLink="./cockpit" routerLinkActive="active">CockPit</a> |
+    <a routerLink="./server-element" routerLinkActive="active">server-element</a>
+    <router-outlet></router-outlet>
+  </li>
+</ul>
